@@ -45,7 +45,53 @@ Evaluate the model with the testing data.
 ## PROGRAM
 
 Developed By:Javith farkhan S
+
 Register Number:212221240017
+
+from google.colab import auth
+import gspread
+from google.auth import default
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.metrics import RootMeanSquaredError as rmse
+
+auth.authenticate_user()
+creds, _ = default()
+gc = gspread.authorize(creds)
+worksheet = gc.open('Digital_image').sheet1
+rows = worksheet.get_all_values()
+df = pd.DataFrame(rows[1:], columns=rows[0])
+df = df.astype({'input':'float'})
+df = df.astype({'output':'float'})
+df.head(14)
+
+X = df[['input']].values
+y = df[['output']].values
+Scaler = MinMaxScaler()
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size = 0.33,random_state=33)
+Scaler.fit(X_train)
+X_train1 = Scaler.transform(X_train)
+model = Sequential([
+Dense(17,activation = 'relu',input_shape=[1]),
+Dense(10,activation = 'relu'),
+Dense(1)
+])
+model.compile(optimizer='rmsprop',loss = 'mse')
+model.fit(X_train1,y_train,epochs=2000)
+model.fit(X_train,y_train,epochs=2000)
+loss_plot = pd.DataFrame(model.history.history)
+loss_plot.plot()
+err = rmse()
+preds = model.predict(X_test)
+err(y_test,preds)
+x_n1 = [[40]]
+x_n_n = Scaler.transform(x_n1)
+model.predict(x_n_n)
 
 ## Dataset Information
 
@@ -69,3 +115,5 @@ Register Number:212221240017
 
 
 ## RESULT
+
+Thus a neural network regression model for the given dataset is written and executed successfully
