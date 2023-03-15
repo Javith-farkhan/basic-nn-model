@@ -52,12 +52,12 @@ Evaluate the model with the testing data.
 Developed By:Javith farkhan S
 
 Register Number:212221240017
-```
+
 from google.colab import auth
 import gspread
 from google.auth import default
 import pandas as pd
-```
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
