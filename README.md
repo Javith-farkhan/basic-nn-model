@@ -6,7 +6,9 @@ To develop a neural network regression model for the given dataset.
 
 ## THEORY
 
+Neural networks consist of simple input/output units called neurons. In this article, we will see how neural networks can be applied to regression problems.
 
+Build your training and test set from the dataset, here we are making the neural network 3 hidden layer with activation layer as relu and with their nodes in them. Now we will fit our dataset and then predict the value.
 
 ## Neural Network Model
 
