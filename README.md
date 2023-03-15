@@ -12,7 +12,7 @@ Build your training and test set from the dataset, here we are making the neural
 
 ## Neural Network Model
 
-![NN_image_1](https://user-images.githubusercontent.com/94296805/225384696-82866d8c-11d5-48df-9777-74181604ed81.png)
+![download](https://user-images.githubusercontent.com/94296805/225385723-3c0ee7d8-c017-469f-b448-98b01e8e4f81.png)
 
 
 ## DESIGN STEPS
