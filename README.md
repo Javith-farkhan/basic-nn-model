@@ -44,24 +44,28 @@ Evaluate the model with the testing data.
 
 ## PROGRAM
 
-Include your code here
+Developed By:Javith farkhan S
+Register Number:212221240017
 
 ## Dataset Information
 
-Include screenshot of the dataset
+![Dataset_1](https://user-images.githubusercontent.com/94296805/225378543-e72689c3-70ec-48c3-8e2d-30d3a766fe20.png)
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-Include your plot here
+![Loss vs Iteration](https://user-images.githubusercontent.com/94296805/225378759-797a81ac-22be-4019-869f-88bfdd532a64.png)
+
 
 ### Test Data Root Mean Squared Error
 
-Find the test data root mean squared error
+![Root Mean Square Error](https://user-images.githubusercontent.com/94296805/225378848-69d6b40a-19cb-493f-95ee-b263805737bc.png)
+
 
 ### New Sample Data Prediction
 
-Include your sample input and output here
+![Prediction Data](https://user-images.githubusercontent.com/94296805/225378969-639c13b2-6d89-4bb3-811c-cc2fb30a5302.png)
+
 
 ## RESULT
