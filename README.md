@@ -45,8 +45,8 @@ Evaluate the model with the testing data.
 
 ## PROGRAM
 
-# Developed By: Gunaseelan G
-# Register Number: 212220230031
+# Developed By: Javith farkhan S
+# Register Number: 212221240017
 ```
 from google.colab import auth
 import gspread
